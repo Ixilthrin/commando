@@ -8,6 +8,8 @@ The GUI is set up with text fields for the current command, current working dire
 The right side of the GUI is the text output from the commands.  You can cycle through the different output windows
 at any time.
 
+There is also a text area that represents the standard error output.
+
 
 You can run commands from the local shell, or use built-in commands written in Java, or write your own.
 
@@ -31,3 +33,12 @@ ls | LineNumbers
 
 Commando will add the extension, run the system ls command, pipe the output to LineNumbers.class, 
 and send the output to the current output window in the GUI.
+
+In order to allow for easier editing of a chain of filters, there is an interface for creating a list 
+of filters, which are piped together when "Execute Chain" is pressed.
+
+There is also a text field that reads from the clipboard and writes to the clipboard.  This allows you
+to use text directly from the clipboard.
+
+There are filters related to the clipboard, called ClipboardInput and ClipboardOutput.
+These can be used in a filter chain also.
