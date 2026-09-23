@@ -1,6 +1,8 @@
 commando
 ========
 
+* I need to attach a screen shot of the main GUI.
+
 This is a Java application using swing.  It compiles with Java 7, but should still compile on older versions.
 
 The GUI is set up with text fields for the current command, current working directory, and standard input stream.
